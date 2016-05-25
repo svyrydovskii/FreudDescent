@@ -4,9 +4,6 @@ import twitter4j.*;
 
 import java.util.List;
 
-/**
- * Created by Andrii Svyrydovskyi on 25/05/2016.
- */
 public class FreudRetweeter {
 
     private Twitter twitter;
