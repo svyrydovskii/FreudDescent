@@ -49,15 +49,6 @@ public class FreudRetweeter {
             result = twitter.search(query);
             return result.getTweets();
 
-//            do {
-//                result = twitter.search(query);
-//                List<Status> tweets = result.getTweets();
-//                for (Status tweet : tweets) {
-//                    twitter.retweetStatus(tweet.getId());
-//                    //System.out.println("@" + tweet.getUser().getScreenName() + " - " + tweet.getText());
-//                }
-//            } while ((query = result.nextQuery()) != null);
-//            System.exit(0);
         } catch (TwitterException te) {
             te.printStackTrace();
             System.out.println("Failed to search tweets: " + te.getMessage());
